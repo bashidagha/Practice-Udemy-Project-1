@@ -45,6 +45,13 @@ const AddUser = (props) => {
     nameInputRef.current.value = ''
     ageInputRef.current.value = ''
 
+
+    //it's called uncontrolled components
+    // in previous we rerender onChange inputs and it was un neccesary for
+    // our project(controlled component or stateful component),
+    //  in similar situation that we need only read 
+    // a value, useRef is better and load a few load to browser 
+
   };
 
   const modalErrorOkay = () => {
